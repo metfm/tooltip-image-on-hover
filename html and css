@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.ht {   position:absolute; top:70px;
+left:10px;
+ 
+
+
+
+}
+.ht:hover .tooltip {
+  display:block;
+}
+
+.tooltip {
+  display: none;
+    border-radius: 2px;
+    margin-left: 68px; /* moves the tooltip to the right */
+    margin-top: -25px; /* moves it down */
+    position: absolute;
+    z-index: 1000;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <td class="ht"><button id="webcam" >webcam</button>
+  <span class="tooltip"><img src='https://www.meteology.gr/cam/kolchiko/?t=..' onload='imageRefresh(this, 5000);'  alt="image" width="640" height="480" ></span>
+  </td>
+</table>
+
+</body>
+</html>
